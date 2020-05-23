@@ -1,0 +1,31 @@
+{
+  "name": "2020mobilehybride_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chapelk/2020MobileHybride_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chapelk/2020MobileHybride_server/issues"
+  },
+  "homepage": "https://github.com/chapelk/2020MobileHybride_server#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.15",
+    "mongoose-data-seed": "^2.1.6"
+  },
+  "mdSeed": {
+    "seedersFolder": "./seeders"
+  }
+}
