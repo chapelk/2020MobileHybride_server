@@ -12,7 +12,8 @@ exports.get = function(req, res) {
     const {range, lat, long, category} = req.body;
     Product.find().lean().exec(function (err, products) {
         products.map(product => {
-            product.distance = getDistanceFromLatLonInKm(lat, long, product.lat, product.long);
+            // product.distance = getDistanceFromLatLonInKm(lat, long, product.lat, product.long);
+            product.distance = 50;
             return product;
         });
         return res.status(200).send(products);
